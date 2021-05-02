@@ -31,5 +31,9 @@ module.exports = {
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
         })
-    ]
+    ],
+    output: {
+        filename: '[name].[contenthash].js',
+        path: path.resolve(__dirname, 'dist')
+    }
 }
